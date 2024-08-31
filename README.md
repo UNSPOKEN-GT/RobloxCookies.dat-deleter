@@ -1,5 +1,5 @@
 # RobloxCookies.dat-deleter
-As simple as it sounds, this tool aims to help with instantly deleting the RobloxCookies.dat file instantly
+As simple as it sounds, this tool aims to help with instantly deleting the RobloxCookies.dat file.
 Which in return removes that annoying "Error 403" that Roblox gives when you're trying to play on an account
 whilst being banned on another.
 
