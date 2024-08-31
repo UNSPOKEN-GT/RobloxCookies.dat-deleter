@@ -25,7 +25,7 @@ to test the exe yourself:
 https://www.virustotal.com/
 
 an already completed test:
-gui/file/60faf67e0d5c88188fa5c3050a60d660dcb02dfafa24ed6ae1de33c3b684dd67?nocache=1
+https://www.virustotal.com/gui/file/60faf67e0d5c88188fa5c3050a60d660dcb02dfafa24ed6ae1de33c3b684dd67?nocache=1
 
 # Conclusion
 just a little app i thought i'd quickly make by learning a tad bit of c++, ofc with the help of some ai
