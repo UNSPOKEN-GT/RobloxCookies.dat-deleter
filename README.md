@@ -11,6 +11,7 @@ https://github.com/user-attachments/assets/c35d8025-72d1-43d0-b65d-f6a12eac0337
 
 # How to build it yourself
 I'm not going to go into depth on how to build it yourself, but an easy way is to follow this tutorial:
+
 https://code.visualstudio.com/docs/languages/cpp
 
 or you can watch this good and easy-to-follow YouTube video:
