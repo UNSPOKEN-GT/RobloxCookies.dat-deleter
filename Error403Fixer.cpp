@@ -11,8 +11,20 @@ std::string expand(const std::string& path) {
     return std::string(expandedPath);
 }
 
+void consoleColor(WORD color) {
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hConsole, color);
+}
+
+void printColor(const std::string& prefix, const std::string& message, WORD color) {
+    consoleColor(color);
+    std::cout << prefix;
+    consoleColor(7);
+    std::cout << message << '\n';
+}
+
 int main() {
-    SetConsoleTitleA("Made by GONDO");
+    SetConsoleTitleA("- Made by GONDO -");
 
     std::string filePath = "%localappdata%\\Roblox\\LocalStorage\\RobloxCookies.dat";
     std::string expandedPath = expand(filePath);
@@ -21,17 +33,20 @@ int main() {
     if (file.good()) {
         file.close();
 
-        std::cout << "File exists, attempting to delete...\n";
+        printColor("[+]", " : File exists, attempting to delete...\n", 1);
 
         if (std::remove(expandedPath.c_str()) == 0) {
-            std::cout << "File successfully deleted.\n\nPress Escape to close the terminal..";
-        } else {
-            std::perror("Error deleting file");
+            printColor("[-]", " : File successfully deleted.", 2);
         }
-    } else {
-        std::cout << "The file " << expandedPath << " does not exist.\n\nPress Escape to close the terminal..";
+        else {
+            printColor("[<!>]", " : Error deleting file", 4);
+        }
     }
-    
+    else {
+        printColor("[!]", " : The file '" + expandedPath + "' does not exist.", 6);
+    }
+
+    std::cout << "\nPress Escape to close the terminal..";
     std::cin.get();
 
     return 0;
