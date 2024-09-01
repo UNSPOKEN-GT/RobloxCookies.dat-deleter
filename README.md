@@ -7,7 +7,7 @@ whilst being banned on another.
 Simply open up the file and it should automatically delete the RobloxCookies.dat file, then join a Roblox game.
 
 # Demonstration
-https://github.com/user-attachments/assets/ddae5819-55af-4ea2-af25-b1c74d9ff21a
+https://github.com/user-attachments/assets/c1b89fbc-6bd8-437d-bab2-8c6d713999dd
 
 # How to build it yourself
 I'm not going to go into depth on how to build it yourself, but an easy way is to follow this tutorial:
